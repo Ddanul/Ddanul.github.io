@@ -1,7 +1,7 @@
 :root {
   --primary-color: #222222;
-  --secondary-color: #eeede7;
-  --neutral-color: #fbecda;
+  --secondary-color: #4BAFCE;
+  --neutral-color: #5A7179;
 }
 
 body {
@@ -26,18 +26,28 @@ body {
   /* grid-template-columns: 1fr 2fr 2fr 1fr; */
   /* grid-template-rows: 1fr 2fr 2fr 1fr; */
   /* grid-gap: 0.4rem; */
-  flex: 1 1 100%;
+  /* flex: 1 1 100%; */
 }
 
 .nav {
+  background-color: silver;
+  padding: 20px 0 20px 0;
   display: flex;
   flex: 1 1 auto;
 }
 
 .nav__element {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   flex: 1 1 auto;
   list-style: none;
   text-align: center;
+  font-size: 25px;
+}
+
+a{
+  text-decoration: none;
+  color: midnightblue;
 }
 
 .header {
@@ -45,15 +55,14 @@ body {
 }
 
 .main__header {
+  padding: 20px;
 }
 
 .main__img {
-  background-image: url("/img/Charles_Babbage_-_1860.jpg");
-  background-size: cover;
-  background-position: top center;
   margin: 0 auto;
   height: 600px;
   min-height: 100px;
+  border: 2px solid #525151;
 }
 
 .main__header {
@@ -91,4 +100,15 @@ button {
 
 *:focus {
   outline: none;
+}
+
+#babbage_stamp {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid #525151;
+}
+
+.image1{
+  text-align: center;
 }
